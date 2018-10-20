@@ -8,6 +8,6 @@ def moveDisk(fp, tp):
     print("moving disk from", fp, "to", tp)
 
 
-moveTower(3, "A", "B", "C")
+moveTower(1, "A", "B", "C")
 print('-------------------')
 moveTower(4, "A", "B", "C")

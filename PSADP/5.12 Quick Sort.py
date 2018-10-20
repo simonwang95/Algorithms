@@ -23,7 +23,7 @@ def median3(alist, first, last):
     # 将三者从小到大排序
 
     alist[first], alist[middle] = alist[middle], alist[first]
-    # 将中位数与最小值呼唤
+    # 将中位数与最小值互换
     return alist[first]
 
 

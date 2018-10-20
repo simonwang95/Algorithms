@@ -24,7 +24,7 @@ def gapInsertionSort(L, start, gap):
 
 def shellSort(L):
     # 其他增量序列 如Hibbard
-    hgap = [2**k - 1 for k in range(20, 1, -1) if 2**k -1 < len(L)]
+    hgap = [2**k - 1 for k in range(20, 0, -1) if 2**k -1 < len(L)]
     # 生成Hibbard增量序列，保证相邻互质，保证最大间隔小于列表长度
     # range中的20是一个暂时的办法 生成的最大间隔在百万量级
     for i in range(len(hgap)):
