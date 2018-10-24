@@ -1,8 +1,9 @@
 def qsort(L):
-    if len(L) <= 1: return L
-    return qsort([lt for lt in L[1:] if lt < L[0]]) + L[0:1] + qsort([ge for ge in L[1:] if ge > L[0]])
+    if len(L) <= 1:
+        return L
+    return qsort([x for x in L[1:] if x <= L[0]]) + L[0:1] + qsort([y for y in L[1:] if y > L[0]])
     # L[0:1]表示一个元素的列表 而不是一个元素
-    # 由于用了in 所以不能排重复元素，重复元素被合并了
+    # <= 和 > 而不是 < 和 >  可以排重复
 
 
 def quickSort(alist):
